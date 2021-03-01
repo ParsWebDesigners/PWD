@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #333;
+    color: #d5d5d5;
+    direction: rtl;
+    line-height: 175%;
+}
+footer{
+    background-color: #1e1e1e;
+    color: #ffd700;
+}
