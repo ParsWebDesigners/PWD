@@ -2,20 +2,30 @@
     padding: 0px;
     margin: 0px;
 }
+@font-face{
+    font-family:fa;
+    src:url('./font/Yekan.ttf'),url('./font/Yekan.woff?#iefix');
+}
+@font-face{
+    font-family: eng;
+    src:url('./font/Muli.ttf'),url('./font/Muli.woff?#iefix');
+}
 body{
     background-color: #333;
     color: #d5d5d5;
     direction: rtl;
-    line-height: 5vw;
+    line-height: 200%;
+    font-size: 120%;
+    font-family: fa,eng;
 }
 .img-fig{
     display:block;margin:auto;width: 70%;       
 }
 .figcaption-index{
-    font-weight: bolder;font-size: 250%;padding: 5% 5% 2% 0;
+    font-weight: bolder;font-size: 250%;padding: 5% 5% 5% 0;
 }
 .article-link_index{
-    padding:5%; background-color:#119822;text-decoration: none;color: #fff;border-radius: 10px;
+    padding:3%; background-color:#119822;text-decoration: none;color: #fff;border-radius: 10px;
 }
 main{
     margin: 1%;padding: 1%;
