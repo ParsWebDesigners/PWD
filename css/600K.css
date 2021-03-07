@@ -38,6 +38,7 @@ main{
                  10px -10px 20px #525252;
 }
 footer{
+    margin-top: 15%;
     background-color: #1e1e1e;
     color: #ffd700;
 }
@@ -48,4 +49,29 @@ footer{
 .block-img{
     display: block;
     width: 40%;
+}
+.aboutus-img_learn{
+    width: 30%;
+    margin: 10%;
+}
+#aboutus-img_learn{
+    width: 15%;
+}
+.img-container{
+display: flex;align-items: center;
+text-align: center;
+justify-content: center;
+}
+.aboutus-img_socialmedia{
+    width: 15%;
+    margin: 5%;
+}
+.aboutus-img_connect{
+    width: 15%;
+    margin: 5%;
+}
+.aboutus-head{
+    color: #2e86ab;
+    font-size: 150%;
+    margin-top: 15%;
 }
