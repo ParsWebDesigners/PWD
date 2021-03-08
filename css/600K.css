@@ -51,11 +51,11 @@ footer{
     width: 40%;
 }
 .aboutus-img_learn{
-    width: 30%;
-    margin: 10%;
+    width: 50%;
+    margin: 5%;
 }
 #aboutus-img_learn{
-    width: 15%;
+    width: 35%;
 }
 .img-container{
 display: flex;align-items: center;
