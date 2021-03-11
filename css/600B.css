@@ -19,6 +19,9 @@ body{
     font-family: fa,eng;
     text-indent: 3%;
 }
+.width-img-head{
+    width: 50%;
+}
 .img-fig{
     display:block;margin:auto;width: 70%;       
 }
