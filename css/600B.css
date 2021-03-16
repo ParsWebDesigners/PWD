@@ -82,8 +82,8 @@ justify-content: center;
 /*code editor*/
 #Editor {
     direction: ltr;
-    width: 550px;
-    height: 550px;
+    width: 590px;
+    height: 590px;
     margin: 0 auto 0 auto;
     font-family: eng;
 }
@@ -105,18 +105,18 @@ justify-content: center;
 
 #Editor textarea,iframe{
     border:2px solid #ddd;
-    height: 550px;
-    width:550px;
+    height: 590px;
+    width:590px;
     display: flex;
-    
+    padding: 2%;
     
 }
 
 #Editor textarea{
     resize: none;
     font-family: eng;
-    background-color: #000;
-    color: chartreuse;
+    background-color: #151718;
+    color: #55b5db;
     font-size: 100%;
     display: block;
     font-family: eng;
@@ -138,11 +138,9 @@ justify-content: center;
 
 #Run{
     text-align: center;
-    height: 110px;
+    height: auto;
     width: 100%;
-    background-color: #1e1e1e;
     border-radius: 5px;
-    
 }
 .Run__key{
     width: 50%;
@@ -152,7 +150,7 @@ justify-content: center;
     font-family: eng;
     border-radius: 10px;
     box-shadow: 4px 8px 1px #5d5d5d;
-    margin: 10% auto;
+    margin: 5% auto;
 }
 
 .Run__key:hover{
