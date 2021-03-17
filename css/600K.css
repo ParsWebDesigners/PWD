@@ -105,10 +105,9 @@ justify-content: center;
 #Editor textarea,iframe{
     border:2px solid #ddd;
     height:500px;
-    width:100%;
     display: flex;
-    padding: 2.5%;
-    
+    padding: 10px;
+    width: calc(100% - 20px);
 }
 
 #Editor textarea{
