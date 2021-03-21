@@ -29,7 +29,13 @@ body{
     font-weight: bolder;font-size: 250%;padding: 5% 5% 5% 0;
 }
 .article-link_index{
-    padding:3%; background-color:#119822;text-decoration: none;color: #fff;border-radius: 10px;
+    padding:3%; background:linear-gradient(225deg, #12a324, #0f891f);text-decoration: none;color: #fff;border-radius: 10px;
+}
+.article-link_index:active{
+    background: linear-gradient(225deg, #0f891f, #12a324);
+}
+.article-link_index:hover{
+    background: linear-gradient(225deg, #0f891f, #12a324);
 }
 main{
     margin: 1%;padding: 1%;
