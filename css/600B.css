@@ -53,12 +53,10 @@ footer{
 }
 .width10_footer{
     width:10%;
-    padding: 1%;
 }
 .block-img{
     display: inline-block;
-    width: 20%;
-    padding: 1%;
+    width: 10%;
 }
 .aboutus-img_learn{
     width: 50%;

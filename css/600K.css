@@ -58,7 +58,8 @@ footer{
 }
 .block-img{
     display: block;
-    width: 40%;
+    width: 25%;
+    padding: 1%;
 }
 .aboutus-img_learn{
     width: 50%;
