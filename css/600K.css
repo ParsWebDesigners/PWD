@@ -106,6 +106,9 @@ justify-content: center;
     box-shadow: inset -5px 5px 21px #1e1e1e,
             inset 5px -5px 21px #484848;
 }
+.instagram{
+    margin-right:10%;font-size: 160%;font-weight: 500;
+}
 /*code editor*/
 #Editor {
     direction: ltr;
