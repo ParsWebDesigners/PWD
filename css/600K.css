@@ -10,6 +10,10 @@
     font-family: eng;
     src:url('./font/Muli.ttf'),url('./font/Muli.woff?#iefix');
 }
+a{
+    color: #d5d5d5;
+    text-decoration: none;
+}
 body{
     background-color: #333;
     color: #d5d5d5;
@@ -50,7 +54,7 @@ footer{
     margin-top: 15%;
     background-color: #1e1e1e;
     color: #ffd700;
-    font-size: 85%;
+    font-size: 70%;
 }
 .width10_footer{
     width:20%;
@@ -85,6 +89,14 @@ justify-content: center;
     color: #2e86ab;
     font-size: 150%;
     margin-top: 15%;
+}
+.links{
+    box-shadow:  -5px 5px 21px #1e1e1e,5px -5px 21px #484848;
+    border-radius: 10px;
+    width:70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 .links:hover{
     box-shadow: inset -5px 5px 21px #1e1e1e,
