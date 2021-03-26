@@ -90,7 +90,7 @@ justify-content: center;
 .links{
     box-shadow:  -5px 5px 21px #1e1e1e,5px -5px 21px #484848;
     border-radius: 10px;
-    width:55%;
+    width:50%;
     margin: 0 auto;
     display: flex;
     align-items: center;
