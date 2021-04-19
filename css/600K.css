@@ -169,25 +169,25 @@ justify-content: center;
     text-align: center;
     height: auto;
     width: 100%;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
 }
 .Run__key{
     width: 50%;
-    font-size: 125%;
-    color: #8b0000;
-    background-color: rgba(213,213,213,0.85); 
+    font-size: 90%;
+    color: #d5d5d5;
+    background-color: #333; 
     font-family: eng;
     border-radius: 10px;
-    box-shadow: 4px 8px 1px #5d5d5d;
     margin: 10% auto;
+    box-shadow:  -4px 4px 13px #242424,
+             4px -4px 13px #424242;
+    padding: 5%;
+    font-weight: bolder;
 }
 
 .Run__key:hover{
-    font-weight: bold;
-    text-shadow: 2.5px 2.5px 2px #1d0000;
-    background-color: rgba(213,213,213);
-    box-shadow: 4px 8px 1px rgba(213,213,213,0.7);
+    box-shadow: inset -4px 4px 10px #242424,
+            inset 4px -4px 10px #424242;
     
 }
 #Code::-webkit-scrollbar{
