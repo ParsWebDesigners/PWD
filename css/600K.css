@@ -190,3 +190,21 @@ justify-content: center;
     box-shadow: 4px 8px 1px rgba(213,213,213,0.7);
     
 }
+#Code::-webkit-scrollbar{
+    width: 8px;
+
+}
+#Code::-webkit-scrollbar-thumb{
+    background-color: #317b22;
+    border-radius: 2.5px;
+    background-image: -webkit-linear-gradient(45deg,#84c318 25%, transparent 25%,transparent 50%, #84c318 50%, #84c318 75%, transparent 75%,transparent);
+}
+#Code::-webkit-scrollbar-track{
+    background-color: #e8e1ef;
+    border-radius: 2.5px;
+    box-shadow: inset 0 0 5px black;
+}
+#Code::-webkit-scrollbar-thumb:hover{
+    background: #84c318;
+
+}
