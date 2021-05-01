@@ -94,15 +94,16 @@
             <div style="clear: both;"></div>
        </footer>
        <script>
+           var x=window.innerWidth;
+           
         var editor=CodeMirror.fromTextArea(document.getElementById('edit'),{
             lineNumbers:true,
             scrollbarStyle:'simple'
         });
-        var x=window.innerWidth;
+        
         if(x<=600){
-            x-=40;
+            x=x-40;
             editor.setSize(x, 500);
-            
         }
         function size(){
             x=window.innerWidth;
@@ -111,7 +112,7 @@
                 editor.setSize(x, 500);
             }
         }
-        
+
         function hide()
         {
             document.getElementById('Code-hide').style.display = 'none';
