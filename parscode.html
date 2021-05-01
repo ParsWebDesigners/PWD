@@ -9,10 +9,14 @@
         <link rel="icon" href="./img/terminal.png"/>
         <link rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width:600px)" href="./css/600K.css"/>
         <link rel="stylesheet" type="text/css" media="only screen and (min-width: 601px)" href="./css/600B.css"/>
-        <script type="text/javascript" src="js/code.js"></script>
+        
         <title>ParsCode</title>
+        <link rel="stylesheet" href="./codemirror/lib/codemirror.css">
+        <script src="./codemirror/lib/codemirror.js"></script>
+        <link rel="stylesheet" href="./codemirror/addon/scroll/simplescrollbars.css">
+        <script src="./codemirror/addon/scroll/simplescrollbars.js"></script>
     </head>
-    <body>
+    <body onresize="size()">
 
 
         
@@ -28,7 +32,7 @@
                     <td id="Code-hide">
                         <form>
                             <strong>Code</strong>
-                            <textarea spellcheck="false" id="Code"></textarea>
+                            <textarea spellcheck="false" id="edit"></textarea>
                         </form>
                     </td>
                     <td id="Output-hide"><strong>Output</strong>
@@ -89,6 +93,47 @@
             </section>
             <div style="clear: both;"></div>
        </footer>
+       <script>
+        var editor=CodeMirror.fromTextArea(document.getElementById('edit'),{
+            lineNumbers:true,
+            scrollbarStyle:'simple'
+        });
+        var x=window.innerWidth;
+        if(x<=600){
+            x-=40;
+            editor.setSize(x, 500);
+            
+        }
+        function size(){
+            x=window.innerWidth;
+            if(x<=600){
+                x-=40;
+                editor.setSize(x, 500);
+            }
+        }
+        
+        function hide()
+        {
+            document.getElementById('Code-hide').style.display = 'none';
+            document.getElementById('Output-hide').style.display = 'block';
+            
+        var code = editor.getValue();
+            
+        var iframe = document.getElementById('Browser');
+            
+        iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document :iframe.contentDocument;
+        
+        iframe.document.open();
+        iframe.document.write(code);
+        iframe.document.close();
+        }
+
+        function show()
+        {
+            document.getElementById('Code-hide').style.display = 'block';
+            document.getElementById('Output-hide').style.display = 'none';
+        }
+    </script>
     </body>
 </html>
 

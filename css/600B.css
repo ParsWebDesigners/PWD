@@ -125,7 +125,7 @@ justify-content: center;
     display: none;
 }
 
-#Editor textarea,iframe{
+#Editor textarea{
     border:2px solid #ddd;
     height: 590px;
     display: flex;
@@ -152,6 +152,11 @@ justify-content: center;
     -moz-box-shadow: none;
     box-shadow: none;
 
+}
+#Browser{
+    background-color: white;
+    width: 590px;
+    height: 590px;
 }
 #Browser{
     background-color: white;

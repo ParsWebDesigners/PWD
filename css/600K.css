@@ -133,7 +133,7 @@ justify-content: center;
     display: none;
 }
 
-#Editor textarea,iframe{
+#Editor textarea{
     border:2px solid #ddd;
     height:500px;
     display: flex;
@@ -173,7 +173,7 @@ justify-content: center;
 }
 .Run__key{
     width: 50%;
-    font-size: 90%;
+    font-size: 60%;
     color: #d5d5d5;
     background-color: #333; 
     font-family: eng;
