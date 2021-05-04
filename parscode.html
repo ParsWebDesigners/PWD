@@ -15,11 +15,65 @@
         <script src="./codemirror/lib/codemirror.js"></script>
         <link rel="stylesheet" href="./codemirror/addon/scroll/simplescrollbars.css">
         <script src="./codemirror/addon/scroll/simplescrollbars.js"></script>
+
+        <style>
+            #content{
+                z-index: 2;
+            }
+            .cont{
+                width: 0%;height: 100%;
+                background-color: rgba(0, 0, 0, 0);
+                transition: .4s;overflow: hidden;pointer-events: auto;
+            }
+            nav{
+                position: fixed;top: 0;right: 0;left: 0;bottom: 0;
+                background-color: rgba(0, 0, 0, 0);pointer-events: none;transition: 0.4s;
+            }
+
+            .menu p a{
+                transition: .2s;
+                transition-timing-function:ease;
+            }
+
+            .menu p a:hover ,.menu p a:focus ,menu p a:active{
+                color: #ffd700;
+                font-weight: bolder;
+                font-size: 125%;
+            }
+            .cl{
+                transition: .2s;
+                transition-timing-function:ease;
+            }
+            .cl:hover, .cl:focus , .cl:active{
+                color: #ffd700 ;
+            }
+        </style>
     </head>
     <body onresize="size()">
 
+        <div onclick="show()" style="cursor: pointer;color: #ffd700;display: inline-flex;border-radius: 10px;margin-top:4%;text-indent: 0;box-shadow:  -5px 5px 10px #1e1e1e,5px -5px 10px #484848;">
+            <svg style="margin:20px;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+                <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </div>
 
-        
+        <nav id="content">
+            <section id="tst" class="cont">
+                
+                    <div class="cl" style="font-size: 250%;font-weight: bolder;direction: ltr;color: white;padding-top: 7%;padding-bottom:4%;padding-left: 2%;"><span style="cursor: pointer;" onclick="hide()" class="cl">&times;</span></div>
+                    <hr>
+                    <br>
+
+                    <section style="text-align: center;padding-top: 10%;" class="menu">
+                        <p style="padding-bottom: 10%;"><a href="./index.html">صفحه اصلی</a></p>
+                        <p style="padding-bottom: 10%;"><a href="./parscode.html">ادیتور پارس کد</a></p>
+                        <p style="padding-bottom: 10%;"><a href="./aboutus.html">درباره ما</a></p>
+                    </section>
+
+            </section>
+        </nav>
+
+        <br><br><br>
         <main>
 
             <h1 style="text-decoration: underline;"><em>ParsCode</em></h1><br>
@@ -133,6 +187,22 @@
         {
             document.getElementById('Code-hide').style.display = 'block';
             document.getElementById('Output-hide').style.display = 'none';
+        }
+    </script>
+    <script>
+        var nav= document.getElementById('tst').style;
+        var cont= document.getElementById('content').style;
+
+        function show(){
+            nav.width='75%';
+            nav.backgroundColor='rgba(0,0,0,.8)';
+            cont.visibility="visible";cont.backgroundColor="rgba(0,0,0,0.7)";
+            
+        }
+        function hide(){
+            nav.backgroundColor='rgba(0,0,0,0)';
+            nav.width='0%';
+            cont.backgroundColor="rgba(0,0,0,0)";
         }
     </script>
     </body>
